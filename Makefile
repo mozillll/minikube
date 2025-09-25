@@ -12,12 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-get-dependency-version:
-	@if [ "$(DEP)" = "go" ]; then \
-		echo "$(GO_VERSION)"; \
-	elif [ "$(DEP)" = "buildkit" ]; then \
-		echo "0.11.6"; \
-	fi
+
 
 # Bump these on release - and please check ISO_VERSION for correctness.
 VERSION_MAJOR ?= 1
