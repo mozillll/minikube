@@ -13,10 +13,6 @@
 # limitations under the License.
 
 
-ifeq ($(DEP),go)
-	@go version | awk '{print $$3}'
-endif
-
 
 # Bump these on release - and please check ISO_VERSION for correctness.
 VERSION_MAJOR ?= 1
